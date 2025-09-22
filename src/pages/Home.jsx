@@ -23,7 +23,7 @@ const Home = () => {
 
     if(!coins || coins.length===0){
         return(
-            <h1 className=' text-6xl font-extrabold text-center text-white my-20'>loading........</h1>
+            <h1 className=' text-6xl font-extrabold text-center text-white my-20 min-h-screen'>loading........</h1>
         )
     }
     return (

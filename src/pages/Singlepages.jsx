@@ -28,7 +28,7 @@ const Singlepages = () => {
     )
   }
   return (
-    <div className=' p-10 max-h-screen'>
+    <div className=' p-10 min-h-screen'>
       <div className=' border-2 border-gray-400 rounded-2xl p-5 flex justify-around  items-center relative flex-col md:flex-row'>
           <img className='shadow-2xl m-auto h-50 w-50 md:h-52 bg-white rounded-full p-2 rotate-x-15 -rotate-y-30' src={coins?.image?.large} alt="img" />
             <div className=' space-y-2'>
@@ -41,7 +41,7 @@ const Singlepages = () => {
             <div className='bg-white p-1 rounded-lg absolute text-xs md:text-lg font-bold right-[-10px] top-[-10px]'>Rank #{coins?.market_cap_rank}</div>
       </div>
         <div className=' flex justify-evenly md:gap-4 md:justify-start mt-4'>
-                  <a href={coins?.links?.homepage} target='_blank' className=' bg-amber-50 px-7 py-2  font-bold rounded-2xl  text-center md:px-7 md:text-lg flex items-center gap-3'><FaGlobe/> Offical Website </a>
+                  <a href={coins?.links?.homepage} target='_blank' className=' bg-amber-50 px-7 py-2  font-bold rounded-2xl text-  text-center md:px-7 md:text-lg flex items-center gap-3'><FaGlobe/> Offical  </a>
           <a href={coins?.links?.repos_url?.github} target='_blank' className=' bg-gray-700 text-white font-bold px-14 py-2 rounded-2xl  text-center md:px-14 md:text-lg flex items-center gap-3'><FaGithub/> Github</a>
         </div>
     </div>
